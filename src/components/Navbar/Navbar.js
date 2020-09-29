@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import {Search, ShoppingCart} from "@material-ui/icons";
+import { Search, ShoppingCart } from "@material-ui/icons";
 
 const Navbar = () => {
   return (
@@ -8,14 +8,14 @@ const Navbar = () => {
       <nav>
         <div className="logo">Golden Shoe</div>
         <div className="search-container">
+          <div className="search-icon">
+            <Search />
+          </div>
           <input
             className="search-box"
             placeholder="Search"
             type="text"
           ></input>
-          <div className="search-icon">
-            <Search />
-          </div>
         </div>
         <div className="links-container">
           <ul>
@@ -24,7 +24,7 @@ const Navbar = () => {
           </ul>
           <div className="nav-icons-container">
             <ShoppingCart />
-           </div>
+          </div>
         </div>
       </nav>
     </header>
