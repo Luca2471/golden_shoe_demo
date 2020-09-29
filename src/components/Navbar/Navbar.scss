@@ -1,0 +1,76 @@
+$logoColour: rgba(0, 0, 0, 0.6);
+$border: 1px solid rgba(0, 0, 0, 0.14);
+
+header {
+  width: 100vw;
+}
+
+nav {
+  height: 60px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 0 60px;
+  justify-content: space-between;
+}
+
+.logo {
+  color: $logoColour;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin: 20px;
+  text-transform: uppercase;
+  color: $logoColour;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.search-container {
+  border-bottom: $border;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.search-box {
+  color: $logoColour;
+
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  color: $logoColour;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-icons-container {
+  display: flex;
+  align-items: center;
+  color: $logoColour;
+  margin-left: 10px;
+  cursor: pointer;
+}
