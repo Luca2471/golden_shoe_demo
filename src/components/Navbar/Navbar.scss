@@ -34,7 +34,7 @@ ul {
 }
 
 li {
-  margin: 20px;
+  margin: 20px 20px 20px 10px;
   text-transform: uppercase;
   color: $logoColour;
   cursor: pointer;
@@ -84,4 +84,25 @@ li {
 
 .nav-icon {
   margin: 20px;
+}
+
+
+.nav-active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  &:active{
+      text-decoration: none;
+      color: $logoColour
+  }
+  &:before {
+    content: "•";
+    font-size: 20px;
+  
+  }
+}
+
+a {
+  text-decoration: none;
 }

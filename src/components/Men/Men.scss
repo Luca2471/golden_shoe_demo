@@ -1,0 +1,23 @@
+.category-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.category-title {
+    display: flex;
+    justify-content: center;
+    margin: 20px 60px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+.shoes-container {
+
+    height: 700px;
+    margin: 0 60px;
+    background: blue;
+
+}
+

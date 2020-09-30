@@ -1,0 +1,20 @@
+.filters-container {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  justify-content: space-evenly;
+  margin: 20px 260px;
+}
+
+.filter-choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.label-title {
+  margin: 5px;
+  letter-spacing: 2px;
+}
