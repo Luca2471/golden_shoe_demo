@@ -4,7 +4,7 @@ import { Call, Email } from "@material-ui/icons";
 
 const Footer = () => {
   return (
-    <section className="footer-container">
+    <footer className="footer-container">
       <div className="footer-links-container">
         <div className="footer-block one">
           <h2>Pages</h2>
@@ -53,7 +53,7 @@ const Footer = () => {
       <div className="footer-legal">
         <p>© Golden Shoe 2020</p>
       </div>
-    </section>
+    </footer>
   );
 };
 

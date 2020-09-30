@@ -1,16 +1,20 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
 import "./App.scss";
-import Hero from "./Hero/Hero";
-import Footer from "./Footer/Footer";
+import Home from "./Home/Home";
+import Men from "./Men/Men"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
+    <Router>
       <Navbar />
-      <Hero />
-      <Footer />
-    </>
+      <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/men" component={Men} />
+
+      </Switch>
+    </Router>
   );
 };
 

@@ -1,12 +1,13 @@
 import React from "react";
 import "./Navbar.scss";
 import { Search, ShoppingCart, Person } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <header>
       <nav>
-        <div className="logo">Golden Shoe</div>
+        <Link to="/" className="router-link"> <div className="logo">Golden Shoe </div></Link>
         <div className="search-container">
           <div className="search-icon">
             <Search />
@@ -19,8 +20,12 @@ const Navbar = () => {
         </div>
         <div className="links-container">
           <ul>
-            <li href="#">Men</li>
-            <li href="#">Women</li>
+            <Link to="/men" className="router-link">
+              <li>Men</li>
+            </Link>
+            <Link to="/women" className="router-link">
+              <li>Women</li>
+            </Link>
           </ul>
           <div className="nav-icons-container">
             <div className="nav-icon">
