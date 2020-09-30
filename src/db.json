@@ -1,0 +1,86 @@
+{
+  "men": [
+    {
+      "id": "1",
+      "brand": "Nike",
+      "model": "Air Max",
+      "price": 120.0,
+      "colour": "Black",
+      "size": [5, 6, 7, 8, 9, 10, 11, 12],
+      "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/nike-airmax-black-men.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "id": "2",
+      "brand": "Nike",
+      "model": "Air Max",
+      "price": 115.0,
+      "colour": "White",
+      "size": [5, 6, 7, 8, 9, 10, 11, 12],
+      "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/nike-airmax-white-men.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "id": "3",
+      "brand": "Adidas",
+      "model": "Ultraboost",
+      "price": 160.0,
+      "colour": "Black",
+      "size": [5, 6, 7, 8, 9, 10, 11, 12],
+      "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/adidas-ultraboost-black-men.jpg",
+      "availability": "Low Stock"
+    },
+    {
+      "id": "4",
+      "brand": "Adidas",
+      "model": "Running",
+      "price": 80.0,
+      "colour": "White",
+      "size": [5, 6, 7, 8, 9, 10, 11, 12],
+      "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/adidas-running-white-men.jpg",
+      "availability": "Not Available"
+    }
+  ],
+  "women": [
+    {
+      "id": "1",
+      "brand": "Vans",
+      "model": "Filmore Decon",
+      "price": 45.0,
+      "colour": "Peach",
+      "size": [4, 5, 6, 7, 8],
+      "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/vans-filmore-decon-peach-women.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "id": "2",
+      "brand": "London Rebel",
+      "model": "Heeled Ankle Boots",
+      "price": 32.0,
+      "colour": "Black",
+      "size": [4, 5, 6, 7, 8],
+      "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/london-rebel-heeled-ankle-boots-black-women.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "id": "3",
+      "brand": "Depp",
+      "model": "Flat Shoes",
+      "price": 46.0,
+      "colour": "White",
+      "size": [4, 5, 6, 7, 8],
+      "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/depp-flat-shoes-white-women.jpg",
+      "availability": "Low Stock"
+    },
+    {
+      "id": "4",
+      "brand": "New Look",
+      "model": "Ankle Boots",
+      "price": 28.0,
+      "colour": "Brown",
+      "size": [4, 5, 6, 7, 8],
+      "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/new-look-ankle-boot-brown-women.jpg",
+      "availability": "Not Available"
+    }
+  ]
+}

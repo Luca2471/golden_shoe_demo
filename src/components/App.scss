@@ -11,10 +11,12 @@ body {
   flex-direction: column;
   width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: $heading;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.87);

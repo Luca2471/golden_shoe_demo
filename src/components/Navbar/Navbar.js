@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import { Search, ShoppingCart } from "@material-ui/icons";
+import { Search, ShoppingCart, Person } from "@material-ui/icons";
 
 const Navbar = () => {
   return (
@@ -23,7 +23,12 @@ const Navbar = () => {
             <li href="#">Women</li>
           </ul>
           <div className="nav-icons-container">
-            <ShoppingCart />
+            <div className="nav-icon">
+              <ShoppingCart />
+            </div>
+            <div className="nav-icon">
+              <Person />
+            </div>
           </div>
         </div>
       </nav>

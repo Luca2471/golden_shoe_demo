@@ -69,6 +69,7 @@ li {
 .links-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .nav-icons-container {
@@ -77,4 +78,8 @@ li {
   color: $logoColour;
   margin-left: 10px;
   cursor: pointer;
+}
+
+.nav-icon {
+  margin: 20px;
 }
