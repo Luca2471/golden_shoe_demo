@@ -25,10 +25,26 @@ const Product = () => {
   }, [id, gender]);
 
   return (
-    <div>
-      <img src={product.url} alt="" />
+    <>
+      <div className="product-container">
+        <div className="product-img">
+          <img src={product.url} alt="" />
+        </div>
+        <div className="product-details">
+          <div className="product-title">
+            <h2>{product.brand}</h2>
+            <p>{product.model}</p>
+            <p className="product-price">£{product.price}</p>
+            <p className="product-colour">Colour: {product.colour}</p>
+            <button className="add-item-bskt">Add to Basket</button>
+            {/* <select>
+              {product && product.map((size) => console.log(size))}
+            </select> */}
+          </div>
+        </div>
+      </div>
       <Footer />;
-    </div>
+    </>
   );
 };
 

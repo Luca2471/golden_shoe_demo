@@ -13,14 +13,20 @@
   cursor: pointer;
 }
 
-.shoe-title h2,
-.shoe-title p {
+.shoe-title h2 {
   display: flex;
   margin: 5px 0 0 0;
   justify-content: center;
 }
 
+.shoe-title p {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
 .shoe-price {
   font-weight: bold;
   padding-top: 5px;
+  letter-spacing: 0px;
 }
