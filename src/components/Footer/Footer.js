@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import { Call, Email } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,12 +10,12 @@ const Footer = () => {
         <div className="footer-block one">
           <h2>Pages</h2>
           <ul className="footer-ul">
-            <li className="footer-links" href="#">
-              Men
-            </li>
-            <li className="footer-links" href="#">
-              Women
-            </li>
+            <Link to="/men">
+              <li className="footer-links">Men</li>
+            </Link>
+            <Link to="/women">
+              <li className="footer-links">Women</li>
+            </Link>
             <li className="footer-links" href="#">
               Your Account
             </li>
