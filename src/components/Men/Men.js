@@ -4,18 +4,17 @@ import Footer from "../Footer/Footer";
 import axios from "axios";
 import FilterMenu from "../FilterMenu/FilterMenu";
 
+const MENS_SHOES_API = "http://localhost:4000/men";
+
 const Men = () => {
   const [shoeData, setShoeData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:4000/men")
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    try {
+      axios.get(MENS_SHOES_API).then((res) => setShoeData(res));
+    } catch (err) {
+      console.log(err);
+    }
   }, []);
 
   return (
