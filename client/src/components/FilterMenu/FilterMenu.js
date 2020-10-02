@@ -8,7 +8,7 @@ const FilterMenu = () => {
         <label className="label-title">
           <h2>Colour</h2>
         </label>
-        <select>
+        <select className="select-filter">
           <option value="White">White</option>
           <option value="black">Black</option>
         </select>
@@ -17,7 +17,7 @@ const FilterMenu = () => {
         <label className="label-title">
           <h2>Brand</h2>
         </label>
-        <select>
+        <select className="select-filter">
           <option value="nike">Nike</option>
           <option value="adidas">Adidas</option>
         </select>
@@ -26,7 +26,7 @@ const FilterMenu = () => {
         <label className="label-title">
           <h2>Size</h2>
         </label>
-        <select>
+        <select className="select-filter">
           <option value="five">5</option>
           <option value="six">6</option>
           <option value="seven">7</option>
@@ -41,7 +41,7 @@ const FilterMenu = () => {
         <label className="label-title">
           <h2>Price</h2>
         </label>
-        <select>
+        <select className="select-filter">
           <option value="fifty">£0 - £50</option>
           <option value="hundred">£50 - £100</option>
           <option value="hundred-plus">£100+</option>
