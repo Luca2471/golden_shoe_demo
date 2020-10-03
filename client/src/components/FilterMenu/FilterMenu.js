@@ -9,8 +9,10 @@ const FilterMenu = () => {
           <h2>Colour</h2>
         </label>
         <select className="select-filter">
-          <option value="White">White</option>
+          <option value="white">White</option>
           <option value="black">Black</option>
+          <option value="brown">Brown</option>
+          <option value="peach">Peach</option>
         </select>
       </div>
       <div className="filter-choice">
@@ -20,6 +22,10 @@ const FilterMenu = () => {
         <select className="select-filter">
           <option value="nike">Nike</option>
           <option value="adidas">Adidas</option>
+          <option value="vans">Vans</option>
+          <option value="depp">Depp</option>
+          <option value="new-look">New Look</option>
+          <option value="london-rebel ">London Rebel</option>
         </select>
       </div>
       <div className="filter-choice">
