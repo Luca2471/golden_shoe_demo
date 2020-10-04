@@ -10,7 +10,7 @@ const Product = () => {
   let { id, gender } = useParams();
 
   useEffect(() => {
-    const PRODUCT_FETCH = `http://localhost:4000/${gender}/${id}`;
+    const PRODUCT_FETCH = `http://localhost:3001/products/${gender}/${id}`;
 
     const getProduct = async () => {
       try {
@@ -28,7 +28,7 @@ const Product = () => {
     <>
       <div className="product-container">
         <div className="product-img">
-          <img src={product.url} alt="" />
+          <img src={product.img} alt="" />
         </div>
         <div className="product-details">
           <div className="product-title">
@@ -36,7 +36,10 @@ const Product = () => {
             <p>{product.model}</p>
             <p className="product-price">£{product.price}</p>
             <p className="product-colour">Colour: {product.colour}</p>
+            <p className="product-stock"> {product.availability}</p>
+            <p>{product.stock}</p>
             <button className="add-item-bskt">Add to Basket</button>
+
             {/* <select>
               {product && product.map((size) => console.log(size))}
             </select> */}

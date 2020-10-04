@@ -9,7 +9,7 @@ const Men = () => {
   const [shoeData, setShoeData] = useState([]);
 
   useEffect(() => {
-    const MEN_SHOES_API = "http://localhost:4000/men/";
+    const MEN_SHOES_API = "http://localhost:3001/products/men";
 
     const getMensShoesData = async () => {
       try {
@@ -33,7 +33,7 @@ const Men = () => {
         <div className="shoes-container">
           {shoeData &&
             shoeData.map((shoe) => (
-              <ProductCard key={shoe.id} shoe={shoe} gender={"men"} />
+              <ProductCard key={shoe._id} shoe={shoe} gender={"men"} />
             ))}
         </div>
       </section>

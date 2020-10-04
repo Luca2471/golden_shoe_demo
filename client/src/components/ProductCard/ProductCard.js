@@ -6,8 +6,8 @@ const ProductCard = ({ shoe, gender }) => {
   return (
     <div className="card-container">
       <div className="card-img">
-        <Link to={`/${gender}/${shoe.id}`}>
-          <img src={shoe.url} alt="" />
+        <Link to={`/${gender}/${shoe._id}`}>
+          <img src={shoe.img} alt="" />
         </Link>
       </div>
       <div className="details-container">

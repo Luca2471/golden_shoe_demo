@@ -1,0 +1,56 @@
+
+### get all products
+
+GET http://localhost:3001/products
+
+
+### get product by id
+
+GET http://localhost:3001/products/5f79c2b41d64af35e0ef27ce
+
+
+### get all men products
+
+GET http://localhost:3001/products/men
+
+### get all women products
+
+GET http://localhost:3001/products/women
+
+
+### create new product
+
+POST http://localhost:3001/products
+Content-Type: application/json
+
+{
+    "brand": "Polo",
+    "model": "lol",
+    "price": 50,
+    "colour": "Red",
+    "size": 10,
+    "img": "https://image.shutterstock.com/image-photo/cat-medical-mask-protective-antiviral-260nw-1684423789.jpg",
+    "stock": 3,
+    "gender":  "Male"
+}
+
+
+### delete product by id
+
+DELETE http://localhost:3001/products/5f79c2b41d64af35e0ef27ce
+
+
+### delete all products
+
+DELETE http://localhost:3001/products/
+
+
+
+### update product by id
+
+PATCH http://localhost:3001/products/5f79b6911d64af35e0ef27cd
+Content-Type: application/json
+
+{
+    "brand": "New Look"
+}

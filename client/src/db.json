@@ -7,7 +7,7 @@
       "price": 120.0,
       "colour": "Black",
       "size": [5, 6, 7, 8, 9, 10, 11, 12],
-      "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/nike-airmax-black-men.jpg",
+      "img": "https://prjimgs.s3.eu-west-2.amazonaws.com/nike-airmax-black-men.jpg",
       "availability": "In Stock"
     },
     {
@@ -17,7 +17,7 @@
       "price": 115.0,
       "colour": "White",
       "size": [5, 6, 7, 8, 9, 10, 11, 12],
-      "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/nike-airmax-white-men.jpg",
+      "img": "https://prjimgs.s3.eu-west-2.amazonaws.com/nike-airmax-white-men.jpg",
       "availability": "In Stock"
     },
     {
@@ -38,7 +38,7 @@
       "colour": "White",
       "size": [5, 6, 7, 8, 9, 10, 11, 12],
       "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/adidas-running-white-men.jpg",
-      "availability": "Not Available"
+      "availability": "Out of stock"
     }
   ],
   "women": [
@@ -80,7 +80,7 @@
       "colour": "Brown",
       "size": [4, 5, 6, 7, 8],
       "url": "https://prjimgs.s3.eu-west-2.amazonaws.com/new-look-ankle-boot-brown-women.jpg",
-      "availability": "Not Available"
+      "availability": "Out of stock"
     }
   ]
 }
