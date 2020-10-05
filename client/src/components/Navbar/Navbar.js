@@ -34,7 +34,7 @@ const Navbar = () => {
           </ul>
           <div className="nav-icons-container">
             <div className="nav-icon">
-              <NavLink to="/cart" activeClassName="nav-active">
+              <NavLink to="/cart" activeClassName="nav-active cart">
                 <ShoppingCart />
               </NavLink>
             </div>

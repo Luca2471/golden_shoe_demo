@@ -63,12 +63,15 @@ const Product = ({ addToCart }) => {
             <div className="product-stock">
               <GetProductAvailability />
             </div>
-            <select>
-              {product.size &&
-                product.size.map((shoeSize) => (
-                  <option key={shoeSize}>{shoeSize}</option>
-                ))}
-            </select>
+            <div className="product-size">
+              <p> Size:</p>
+              <select className="shoe-size">
+                {product.size &&
+                  product.size.map((shoeSize) => (
+                    <option key={shoeSize}>{shoeSize}</option>
+                  ))}
+              </select>
+            </div>
             <button
               className="add-item-bskt"
               onClick={() => addToCart(product)}
