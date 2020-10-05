@@ -21,18 +21,7 @@ GET http://localhost:3001/products/women
 ### create new product
 
 POST http://localhost:3001/products
-Content-Type: application/json
 
-{
-    "brand": "Polo",
-    "model": "lol",
-    "price": 50,
-    "colour": "Red",
-    "size": 10,
-    "img": "https://image.shutterstock.com/image-photo/cat-medical-mask-protective-antiviral-260nw-1684423789.jpg",
-    "stock": 3,
-    "gender":  "Male"
-}
 
 
 ### delete product by id
