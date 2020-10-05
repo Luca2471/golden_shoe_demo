@@ -72,6 +72,11 @@ const Product = ({ addToCart }) => {
                   ))}
               </select>
             </div>
+            <div className="shoe-fit">
+              <p>Customers rate shoe:</p>
+              <b>TRUE TO SIZE</b>
+            </div>
+
             <button
               className="add-item-bskt"
               onClick={() => addToCart(product)}

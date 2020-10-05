@@ -122,3 +122,19 @@ $green: #34a853;
   font-size: 1.5em;
   letter-spacing: 2px;
 }
+
+.shoe-fit {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  p {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  b {
+    font-size: 14px;
+  }
+}
