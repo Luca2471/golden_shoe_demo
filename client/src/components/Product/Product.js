@@ -24,6 +24,30 @@ const Product = () => {
     getProduct();
   }, [id, gender]);
 
+  const GetProductAvailability = () => {
+    if (product.stock === 0) {
+      return (
+        <div className="stock out-of-stock">
+          Out of Stock
+          <p>We're not sure when this item will next be in stock.</p>
+        </div>
+      );
+    } else if (product.stock < 3) {
+      return (
+        <div className="stock low-stock">
+          Low Stock <p>Limited stock available.</p>
+        </div>
+      );
+    } else {
+      return (
+        <div className="stock in-stock">
+          In stock
+          <p>Order before 2pm for gauranteed next day delivery!</p>
+        </div>
+      );
+    }
+  };
+
   return (
     <>
       <div className="product-container">
@@ -36,17 +60,14 @@ const Product = () => {
             <p>{product.model}</p>
             <p className="product-price">£{product.price}</p>
             <p className="product-colour">Colour: {product.colour}</p>
-            <p className="product-stock"> {product.availability}</p>
-            <p>{product.stock}</p>
+            <div className="product-stock">
+              <GetProductAvailability />
+            </div>
             <button className="add-item-bskt">Add to Basket</button>
-
-            {/* <select>
-              {product && product.map((size) => console.log(size))}
-            </select> */}
           </div>
         </div>
       </div>
-      <Footer />;
+      <Footer />
     </>
   );
 };

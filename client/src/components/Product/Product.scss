@@ -1,4 +1,7 @@
 $border: 1px solid rgba(0, 0, 0, 0.6);
+$red: #e94134;
+$amber: #f9bb04;
+$green: #34a853;
 
 .product-container {
   display: flex;
@@ -65,4 +68,34 @@ $border: 1px solid rgba(0, 0, 0, 0.6);
 
 .product-stock {
   padding-top: 25px;
+}
+
+.in-stock {
+  color: $green;
+  p {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.low-stock {
+  color: $amber;
+  p {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.out-of-stock {
+  color: $red;
+
+  p {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.stock {
+  font-size: 1.5em;
+  letter-spacing: 2px;
 }

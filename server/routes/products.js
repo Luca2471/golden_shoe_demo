@@ -37,7 +37,7 @@ router.get("/men", async (req, res) => {
 
 router.get("/men/:id", getProduct, async (req, res) => {
   try {
-    res.json(res.product);
+    await res.json(res.product);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
@@ -54,15 +54,15 @@ router.get("/women", async (req, res) => {
 
 router.get("/women/:id", getProduct, async (req, res) => {
   try {
-    res.json(res.product);
+    await res.json(res.product);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
 });
 
 //Get one shoe
-router.get("/:id", getProduct, (req, res) => {
-  res.json(res.product);
+router.get("/:id", getProduct, async (req, res) => {
+  await res.json(res.product);
 });
 
 //Create shoe
