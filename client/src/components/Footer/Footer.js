@@ -22,6 +22,9 @@ const Footer = () => {
             <li className="footer-links" href="#">
               Your Orders
             </li>
+            <Link to="/shipping-and-returns">
+              <li className="footer-links">Shipping & Returns</li>
+            </Link>
           </ul>
         </div>
         <div className="footer-block two">

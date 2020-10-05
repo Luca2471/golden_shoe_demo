@@ -7,7 +7,10 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <NavLink to="/"> <div className="logo">Golden Shoe </div></NavLink>
+        <NavLink to="/">
+          {" "}
+          <div className="logo">Golden Shoe </div>
+        </NavLink>
         <div className="search-container">
           <div className="search-icon">
             <Search />
@@ -20,6 +23,9 @@ const Navbar = () => {
         </div>
         <div className="links-container">
           <ul>
+            <NavLink to="/shipping-and-returns" activeClassName="nav-active">
+              <li>Shipping & Returns</li>
+            </NavLink>
             <NavLink to="/men" activeClassName="nav-active">
               <li>Men</li>
             </NavLink>
