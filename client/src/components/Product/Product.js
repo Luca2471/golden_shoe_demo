@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 import { useParams } from "react-router";
 import axios from "axios";
 
-const Product = () => {
+const Product = ({ addToCart }) => {
   const [product, setProduct] = useState({});
 
   let { id, gender } = useParams();
@@ -63,7 +63,18 @@ const Product = () => {
             <div className="product-stock">
               <GetProductAvailability />
             </div>
-            <button className="add-item-bskt">Add to Basket</button>
+            <select>
+              {product.size &&
+                product.size.map((shoeSize) => (
+                  <option key={shoeSize}>{shoeSize}</option>
+                ))}
+            </select>
+            <button
+              className="add-item-bskt"
+              onClick={() => addToCart(product)}
+            >
+              Add to Basket
+            </button>
           </div>
         </div>
       </div>
