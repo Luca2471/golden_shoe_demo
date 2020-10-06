@@ -104,3 +104,24 @@
     cursor: pointer;
   }
 }
+
+.delivery-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.delivery-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.delivery-input {
+  padding: 5px 0;
+
+  label {
+    padding: 0 15px;
+  }
+}
