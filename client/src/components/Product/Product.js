@@ -42,7 +42,7 @@ const Product = ({ addToCart }) => {
       return (
         <div className="stock in-stock">
           In stock
-          <p>Order before 22:00 for gauranteed next day delivery!</p>
+          <p>Order before 22:00 for guaranteed next day delivery!</p>
         </div>
       );
     }
