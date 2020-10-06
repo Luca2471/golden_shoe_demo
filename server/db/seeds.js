@@ -39,7 +39,7 @@ db.products.insertMany([
     "colour": "White",
     "size": [5, 6, 7, 8, 9, 10, 11, 12],
     "img": "https://prjimgs.s3.eu-west-2.amazonaws.com/adidas-running-white-men.jpg",
-    "stock": 1,
+    "stock": 0,
     "gender": "Male"
   },
   {
