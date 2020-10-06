@@ -77,12 +77,14 @@ const Product = ({ addToCart }) => {
               <b>TRUE TO SIZE</b>
             </div>
 
-            <button
-              className="add-item-bskt"
-              onClick={() => addToCart(product)}
-            >
-              Add to Basket
-            </button>
+            {product.stock === 0 ? null : (
+              <button
+                className="add-item-bskt"
+                onClick={() => addToCart(product)}
+              >
+                Add to Basket
+              </button>
+            )}
           </div>
         </div>
       </div>
