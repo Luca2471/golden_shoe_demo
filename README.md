@@ -1,3 +1,17 @@
+ ## Built using
+ HTML5, CSS3, JS, React, Express.JS, mongoDB 
+ 
+ ## Overview
+ 
+ <img src="https://prjimgs.s3.eu-west-2.amazonaws.com/home.png" width="20%" height="20%" align="left">
+ <img src="https://prjimgs.s3.eu-west-2.amazonaws.com/shoes-page.png" width="20%" height="20%" align="left">
+ <img src="https://prjimgs.s3.eu-west-2.amazonaws.com/product.png" width="20%" height="20%"align="left">
+ <img src="https://prjimgs.s3.eu-west-2.amazonaws.com/checkout.png" width="20%" height="20%">
+
+ 
+ This is an on-going e-commerce website I've created for fun. 
+
+
 ## How to start
 
 requirements: please ensure that you have mongoDB installed on your machine.
